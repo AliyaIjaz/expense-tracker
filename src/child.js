@@ -2,9 +2,8 @@ import React, {useContext, useState} from 'react';
 import { TransactionContext } from './transContext';
 
 function Child() {
-
   let {transactions, addTransaction} = useContext(TransactionContext);
-  //let {transaction, delTransaction} = useContext(TransactionContext);
+  let {delTransaction} = useContext(TransactionContext);
   let [newDesc, setDesc] = useState(" ");
   let [newAmount, setAmount] = useState(0);  
 
